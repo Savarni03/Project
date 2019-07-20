@@ -20,8 +20,8 @@ public int save(Emp p){
     
 	}
 public int update(Emp p){  
-    String sql="update Emp99 set name='"+p.getName()+"', salary="+p.getSalary()+",designation='"+p.getDesignation()+"' where id="+p.getId()+"";  
-    return template.update(sql);  
+    String sql="update Emp99 set name=?, salary=?,designation=? where id="+p.getId()+"";  
+    return template.update(sql,new Object[] {p.getName(),p.getSalary(),p.getDesignation() });  
 }  
 public int delete(int id){  
     String sql="delete from Emp99 where id="+id+"";  
