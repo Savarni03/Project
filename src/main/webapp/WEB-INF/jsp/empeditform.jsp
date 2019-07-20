@@ -120,7 +120,7 @@ $('.message a').click(function(){
 <div class="login-page">
 <div class="form">
  		<h1>Edit Employee</h1>
-       <form:form method="POST" action="editsave">  
+       <form:form name="edform" method="post" action="/SpringMVCCRUDSimple/editsave">  
       	<table >  
       	<tr>
       	<td></td>  
@@ -141,7 +141,7 @@ $('.message a').click(function(){
          
          <tr>  
           <td> </td>  
-          <td> <button type="submit" formaction="editsave">Save</button></td>  
+          <td> <button type="submit" formaction="/SpringMVCCRUDSimple/editsave">Save</button></td>  
          </tr>  
         </table>  
        </form:form>  
